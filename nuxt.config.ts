@@ -3,4 +3,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables', 'composables/**/index.ts'],
   },
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ]
 })
