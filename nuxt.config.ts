@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     dirs: ['composables', 'composables/**/index.ts', 'stores'],
   },
   modules: ['@pinia/nuxt'],
+  alias: {
+    "@pinia/nuxt": require.resolve("@pinia/nuxt/module.mjs"),
+  },
   pinia: {
     autoImports: [
       'defineStore',
