@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     dirs: ['composables', 'composables/**/index.ts'],
   },
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt'
   ]
 })
