@@ -1,10 +1,5 @@
 <template>
   <div>
-    <AtomsAButton @click="store.randomizeCounter()" />
-    {{ store.count }}
+    <NuxtWelcome />
   </div>
 </template>
-
-<script setup>
-const store = useCounterStore()
-</script>
