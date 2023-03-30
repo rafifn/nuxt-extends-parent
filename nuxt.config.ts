@@ -2,5 +2,12 @@
 export default defineNuxtConfig({
   imports: {
     dirs: ['composables', 'composables/**/index.ts', 'stores'],
-  }
+  },
+  modules: ['@pinia/nuxt'],
+  pinia: {
+    autoImports: [
+      'defineStore',
+      ['defineStore', 'definePiniaStore']
+    ],
+  },
 })
