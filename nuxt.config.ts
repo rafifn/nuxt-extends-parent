@@ -3,4 +3,5 @@ export default defineNuxtConfig({
   imports: {
     dirs: ['composables', 'composables/**/index.ts', 'stores'],
   },
+  modules: ['l-min']
 })
